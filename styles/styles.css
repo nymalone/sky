@@ -194,7 +194,7 @@ footer {
     background-color: #f1f2fa;
     padding-left: 8%;
     padding-right: 8%;
-    width: 100%;
+    width: 101%;
     margin: 0 15px;
 }
 
@@ -318,4 +318,8 @@ footer {
     font-weight: 700;
     text-indent: 10px;
     color: #202021;
+}
+
+.swipers {
+    padding: 0 0 0 5%;
 }
