@@ -45,7 +45,6 @@
 .login {
     display: flex;
     align-items: center;
-    width: auto;
 }
 
 .login_user {
