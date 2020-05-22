@@ -11,9 +11,5 @@
 #### Premissa: 
 Desenvolver a página com o layout anexo, que seja totalmente responsivo. 
 
-#### Informações para o uso da API: 
-
-CURL: curl --location --request GET 'https://sky-frontend.herokuapp.com/movies' 
-
 #### Telas: 
 https://scene.zeplin.io/project/5e29b6105e839f971f3f90bf 
