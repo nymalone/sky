@@ -127,6 +127,7 @@
             <div class="swiper-container">
                 <p class="category">Ação</p>
                 <div class="acao swiper-wrapper"></div>
+                
                 <div class="swiper-button-prev hide-for-small-only"></div>
                 <div class="swiper-button-next hide-for-small-only"></div>
             </div>
@@ -317,6 +318,11 @@
             slidesPerView: 1,
             spaceBetween: 10,
             loop: true,
+            observer: true, 
+            observeParents: true,
+            freeMode: true,
+            watchSlidesVisibility: true,
+            watchSlidesProgress: true,
             pagination: {
                 el: '.swiper-pagination',
                 clickable: true,
@@ -336,7 +342,7 @@
                     spaceBetween: 40,
                 },
                 1024: {
-                    slidesPerView: 5,
+                    slidesPerView: 7,
                     spaceBetween: 10,
                 },
             }

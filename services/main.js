@@ -9,7 +9,7 @@ fetch("https://sky-frontend.herokuapp.com/movies")
                     <img class="swiper-img" src="${movie.images[0].url}" alt="${movie.title}">
                     </div>`
         );
-      }
+      } 
     });
   })
   .catch(() => {
@@ -105,4 +105,5 @@ fetch("https://sky-frontend.herokuapp.com/movies")
   .catch(() => {
     $(".ficcao").html("Nenhum resultado encontrado!");
   });
+
 
