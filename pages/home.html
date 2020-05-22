@@ -44,7 +44,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item mt-1 ml-2">
+                <li class="nav-item mt-1">
                     <a class="nav-link" href="#">
                         <img class="icon" src="../assets/theme-switcher.png" alt="theme switcher" /></a>
                 </li>
@@ -61,7 +61,7 @@
                 <li class="nav-item">
                     <img src="../assets/user.png" alt="avatar" />
                 </li>
-                <li class="nav-item">
+                <li class="nav-item d-none d-lg-block">
                     <a class="nav-link login_user" href="#" tabindex="-1">Entrar</a>
                 </li>
             </ul>
@@ -85,7 +85,7 @@
         <br>
 
         <!-- Carousel -->
-        <div class="carousel js-flickity" data-flickity='{ "wrapAround": true }'>
+        <div class="carousel js-flickity" data-flickity='{ "wrapAround": true, "contain": true, "prevNextButtons": false}'>
             <div class="carousel-cell">
                 <img class="img-fluid"
                     src="https://d3bntrzcei186j.cloudfront.net/fit-in/669x391/filters:format(png)/images/sky-content-hub-prd/5aff2432ad81a452ac979a84/5a563880332c65000165b739_2_1920x1080.jpeg"
@@ -128,44 +128,44 @@
                 <p class="category">Ação</p>
                 <div class="acao swiper-wrapper"></div>
                 
-                <div class="swiper-button-prev hide-for-small-only"></div>
-                <div class="swiper-button-next hide-for-small-only"></div>
+                <div class="swiper-button-prev 	d-none d-lg-block"></div>
+                <div class="swiper-button-next 	d-none d-lg-block"></div>
             </div>
 
             <div class="swiper-container">
                 <p class="category">Drama</p>
                 <div class="drama swiper-wrapper"></div>
-                <div class="swiper-button-prev hide-for-small-only"></div>
-                <div class="swiper-button-next hide-for-small-only"></div>
+                <div class="swiper-button-prev d-none d-lg-block"></div>
+                <div class="swiper-button-next d-none d-lg-block"></div>
             </div>
 
 
             <div class="swiper-container">
                 <p class="category">Infantil</p>
                 <div class="infantil swiper-wrapper"></div>
-                <div class="swiper-button-prev hide-for-small-only"></div>
-                <div class="swiper-button-nex hide-for-small-onlyt"></div>
+                <div class="swiper-button-prev d-none d-lg-block"></div>
+                <div class="swiper-button-nex hide-for-small-onlyt hide-for-medium-only"></div>
             </div>
 
             <div class="swiper-container">
                 <p class="category">Os mais temidos</p>
                 <div class="terror swiper-wrapper"> </div>
-                <div class="swiper-button-prev hide-for-small-only"></div>
-                <div class="swiper-button-next hide-for-small-only"></div>
+                <div class="swiper-button-prev d-none d-lg-block"></div>
+                <div class="swiper-button-next d-none d-lg-block"></div>
             </div>
 
             <div class="swiper-container">
                 <p class="category">Comédia</p>
                 <div class="comedia swiper-wrapper"></div>
-                <div class="swiper-button-prev hide-for-small-only"></div>
-                <div class="swiper-button-next hide-for-small-only"></div>
+                <div class="swiper-button-prev d-none d-lg-block"></div>
+                <div class="swiper-button-next d-none d-lg-block"></div>
             </div>
 
             <div class="swiper-container">
                 <p class="category">Ficção Científica</p>
                 <div class="ficcao swiper-wrapper"> </div>
-                <div class="swiper-button-prev hide-for-small-only"></div>
-                <div class="swiper-button-next hide-for-small-only"></div>
+                <div class="swiper-button-prev d-none d-lg-block"></div>
+                <div class="swiper-button-next d-none d-lg-block"></div>
             </div>
 
 
@@ -320,12 +320,11 @@
             loop: true,
             observer: true, 
             observeParents: true,
-            freeMode: true,
             watchSlidesVisibility: true,
             watchSlidesProgress: true,
+            paginationClickable: true,
             pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
+                el: '.swiper-pagination'
         },
             navigation: {
                 nextEl: '.swiper-button-next',
@@ -335,11 +334,11 @@
             breakpoints: {
                 640: {
                     slidesPerView: 2,
-                    spaceBetween: 20,
+                    spaceBetween: 10,
                 },
                 768: {
-                    slidesPerView: 4,
-                    spaceBetween: 40,
+                    slidesPerView: 6,
+                    spaceBetween: 10,
                 },
                 1024: {
                     slidesPerView: 7,

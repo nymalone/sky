@@ -5,6 +5,7 @@
     font-family: "Roboto", sans-serif;
     box-sizing: border-box;
 }
+
 .main {
     background-color: #fafaff;
     height: 100%;
@@ -42,9 +43,9 @@
 }
 
 .login {
-    margin-right: 15%;
     display: flex;
     align-items: center;
+    width: auto;
 }
 
 .login_user {
@@ -119,6 +120,8 @@
         width: 60%;
     }
 }
+
+
 .flickity-prev-next-button .arrow {
     fill: white;
 }
@@ -194,8 +197,7 @@ footer {
     background-color: #f1f2fa;
     padding-left: 8%;
     padding-right: 8%;
-    width: 101%;
-    margin: 0 15px;
+    margin: 0 !important;
 }
 
 .logo-minha-sky {
@@ -283,17 +285,16 @@ footer {
     width: 100%;
     height: auto;
     background-color: #fafaff;
-    margin-bottom: 24px;
+    margin-bottom: 15px;
   }
 
   .swiper-img {
-      width: 180px;
-      height: 280px;
+      width: 160px;
+      height: 260px;
       border-radius: 5px;
   }
   .swiper-slide {
-    width: 200px !important;
-    margin-top: 20px;
+    width: 180px !important;
     height: 275px !important;
     
 
@@ -313,7 +314,7 @@ footer {
   }
 
 .category {
-    font-size: 22px;
+    font-size: 23px;
     line-height: 1.38;
     font-weight: 700;
     text-indent: 10px;

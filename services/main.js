@@ -4,7 +4,7 @@ fetch("https://sky-frontend.herokuapp.com/movies")
     data[2].movies.forEach((movie) => {
       let idx = movie.categories.indexOf("Ação");
       if (idx != -1) {
-        $(".acao").append(
+        $(".acao").prepend(
           `<div class="swiper-slide">
                     <img class="swiper-img" src="${movie.images[0].url}" alt="${movie.title}">
                     </div>`
@@ -22,7 +22,7 @@ fetch("https://sky-frontend.herokuapp.com/movies")
     data[2].movies.forEach((movie) => {
       let idx = movie.categories.indexOf("Infantil");
       if (idx != -1) {
-        $(".infantil").append(
+        $(".infantil").prepend(
           `<div class="swiper-slide">
                     <img class="swiper-img" src="${movie.images[0].url}" alt="${movie.title}">
                     </div>`
@@ -40,7 +40,7 @@ fetch("https://sky-frontend.herokuapp.com/movies")
     data[2].movies.forEach((movie) => {
       let idx = movie.categories.indexOf("Comédia");
       if (idx != -1) {
-        $(".comedia").append(
+        $(".comedia").prepend(
           `<div class="swiper-slide">
                     <img class="swiper-img" src="${movie.images[0].url}" alt="${movie.title}">
                     </div>`
@@ -58,7 +58,7 @@ fetch("https://sky-frontend.herokuapp.com/movies")
     data[2].movies.forEach((movie) => {
       let idx = movie.categories.indexOf("Drama");
       if (idx != -1) {
-        $(".drama").append(
+        $(".drama").prepend(
           `<div class="swiper-slide">
                     <img class="swiper-img" src="${movie.images[0].url}" alt="${movie.title}">
                     </div>`
@@ -76,7 +76,7 @@ fetch("https://sky-frontend.herokuapp.com/movies")
     data[2].movies.forEach((movie) => {
       let idx = movie.categories.indexOf("Terror" && "Suspense");
       if (idx != -1) {
-        $(".terror").append(
+        $(".terror").prepend(
           `<div class="swiper-slide">
                     <img class="swiper-img" src="${movie.images[0].url}" alt="${movie.title}">
                     </div>`
@@ -94,7 +94,7 @@ fetch("https://sky-frontend.herokuapp.com/movies")
     data[2].movies.forEach((movie) => {
       let idx = movie.categories.indexOf("Ficção Científica");
       if (idx != -1) {
-        $(".ficcao").append(
+        $(".ficcao").prepend(
           `<div class="swiper-slide">
                     <img class="swiper-img" src="${movie.images[0].url}" alt="${movie.title}">
                     </div>`
