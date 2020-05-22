@@ -26,7 +26,6 @@
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
 
@@ -124,48 +123,48 @@
         <br>
         <br>
 
-        <div class="swipers">
+        <div class="swipers" id="movies">
             <div class="swiper-container">
                 <p class="category">Ação</p>
                 <div class="acao swiper-wrapper"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev hide-for-small-only"></div>
+                <div class="swiper-button-next hide-for-small-only"></div>
             </div>
 
             <div class="swiper-container">
                 <p class="category">Drama</p>
                 <div class="drama swiper-wrapper"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev hide-for-small-only"></div>
+                <div class="swiper-button-next hide-for-small-only"></div>
             </div>
 
 
             <div class="swiper-container">
                 <p class="category">Infantil</p>
                 <div class="infantil swiper-wrapper"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev hide-for-small-only"></div>
+                <div class="swiper-button-nex hide-for-small-onlyt"></div>
             </div>
 
             <div class="swiper-container">
                 <p class="category">Os mais temidos</p>
                 <div class="terror swiper-wrapper"> </div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev hide-for-small-only"></div>
+                <div class="swiper-button-next hide-for-small-only"></div>
             </div>
 
             <div class="swiper-container">
                 <p class="category">Comédia</p>
                 <div class="comedia swiper-wrapper"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev hide-for-small-only"></div>
+                <div class="swiper-button-next hide-for-small-only"></div>
             </div>
 
             <div class="swiper-container">
                 <p class="category">Ficção Científica</p>
                 <div class="ficcao swiper-wrapper"> </div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev hide-for-small-only"></div>
+                <div class="swiper-button-next hide-for-small-only"></div>
             </div>
 
 
@@ -320,8 +319,8 @@
             loop: true,
             pagination: {
                 el: '.swiper-pagination',
-
-            },
+                clickable: true,
+        },
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
