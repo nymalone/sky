@@ -1,3 +1,5 @@
+const fetch = require("node-fetch");
+
 fetch("https://sky-frontend.herokuapp.com/movies")
   .then((res) => res.json())
   .then((data) => {
